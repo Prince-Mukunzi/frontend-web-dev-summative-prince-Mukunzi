@@ -1,3 +1,4 @@
+import { data } from "./seed.js";
 export function renderTaskGroup(items) {
   return items
     .map(
@@ -21,3 +22,6 @@ export function renderTaskGroup(items) {
     )
     .join("");
 }
+
+const tasksContainer = document.querySelector(".task-container");
+tasksContainer.innerHTML = renderTaskGroup(data.tasks);

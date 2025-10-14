@@ -26,23 +26,6 @@ export const data = {
       thumbnail: "event-3.png",
       cost: 12000,
     },
-    {
-      title: "Worship Night",
-      date: "Nov 2, 2025",
-      description: "A night of praise and prayer with the campus community.",
-      location: "Faith Hall",
-      thumbnail: "event-2.png",
-      cost: 10000,
-    },
-    {
-      title: "Career Fair",
-      date: "Nov 18, 2025",
-      description:
-        "Meet recruiters from top companies hiring interns and graduates.",
-      location: "Main Hall",
-      thumbnail: "event-3.png",
-      cost: 12000,
-    },
   ],
 
   tasks: [

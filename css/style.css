@@ -144,7 +144,6 @@ main {
 nav.sidebar {
   display: none;
   width: 100%;
-  padding: 1rem 0.5rem;
   background-color: var(--secondary-white-color);
 }
 
@@ -182,7 +181,8 @@ nav.sidebar {
   transition: background-color 0.2s ease;
 }
 .sidebar-group a:hover {
-  background-color: var(--primary-white-color);
+  background-color: var(--secondary-black-color);
+  color: var(--primary-white-color);
 }
 .sidebar-group .active {
   background-color: var(--secondary-black-color);
@@ -195,6 +195,15 @@ nav.sidebar {
 header {
   display: flex;
   flex-direction: column;
+}
+.stat-card {
+  width: 384px;
+  background-color: var(--bg-gray);
+  padding: 2rem 1rem;
+  border-radius: 2rem;
+}
+.stat-card h2 {
+  font-size: 4rem;
 }
 
 .search-bar {
@@ -212,7 +221,7 @@ header {
   gap: 1rem;
   overflow-x: auto;
   overflow-y: hidden;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
 }
@@ -228,6 +237,7 @@ header {
   height: fit-content;
   width: 384px;
   transition: transform 0.3s ease-out;
+  scroll-snap-align: start;
 }
 
 .event-group {
@@ -297,7 +307,7 @@ header {
     width: 18%;
     min-width: 300px;
     height: 100vh;
-    padding: 1rem 0.5rem;
+    padding: 2rem 0.5rem 1rem;
   }
   header {
     display: flex;

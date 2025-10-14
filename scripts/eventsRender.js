@@ -1,3 +1,4 @@
+import { data } from "./seed.js";
 import { formatAmount } from "./formattedAmount.js";
 export function renderEventGroup(items) {
   return items
@@ -85,3 +86,6 @@ export function renderEventGroup(items) {
     )
     .join("");
 }
+
+const eventsContainer = document.querySelector(".event-container");
+eventsContainer.innerHTML = renderEventGroup(data.events);

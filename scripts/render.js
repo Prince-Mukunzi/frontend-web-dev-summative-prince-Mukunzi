@@ -2,21 +2,17 @@ import { data } from "./seed.js";
 import { renderEventGroup } from "./eventsRender.js";
 import { renderTaskGroup } from "./tasksRender.js";
 
-const tasksContainer = document.querySelector(".task-container");
-const eventsContainer = document.querySelector(".event-container");
-
-function renderAll(data) {
-  tasksContainer.innerHTML = renderTaskGroup(data.tasks);
-  eventsContainer.innerHTML = renderEventGroup(data.events);
-}
-
-renderAll(data);
+document.querySelector(".task-count").innerText = data.tasks.length;
+document.querySelector(".events-count").innerText = data.events.length;
 
 // Search filter
 const searchInput = document.getElementById("searchInput");
 
 searchInput.addEventListener("input", (e) => {
   const query = e.target.value.toLowerCase().trim();
+
+  const eventsContainer = document.querySelector(".event-container");
+  const tasksContainer = document.querySelector(".task-container");
 
   const filteredTasks = data.tasks.filter(
     (task) =>
@@ -30,9 +26,6 @@ searchInput.addEventListener("input", (e) => {
       event.description.toLowerCase().includes(query) ||
       event.location.toLowerCase().includes(query)
   );
-
-  renderAll({
-    tasks: filteredTasks,
-    events: filteredEvents,
-  });
+  tasksContainer.innerHTML = renderTaskGroup(filteredTasks);
+  eventsContainer.innerHTML = renderEventGroup(filteredEvents);
 });
