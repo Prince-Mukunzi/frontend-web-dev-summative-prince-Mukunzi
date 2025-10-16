@@ -143,9 +143,44 @@ main {
 
 /* Sidebar */
 nav.sidebar {
-  display: none;
-  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 75%;
+  max-width: 300px;
+  height: 100%;
+  padding: 1rem;
   background-color: var(--secondary-white-color);
+  z-index: 1000;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  overflow-y: auto;
+}
+nav.sidebar.show {
+  transform: translateX(0);
+}
+.burger-menu {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 99;
+}
+.sidebar .close-btn {
+  position: absolute;
+  display: block;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--primary-black-color);
 }
 
 /* Container */
@@ -400,12 +435,20 @@ header {
 ------------------------------ */
 @media (min-width: 768px) {
   nav.sidebar {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 18%;
     min-width: 300px;
     height: 100vh;
     padding: 2rem 0.5rem 1rem;
+    transform: none;
+  }
+  .burger-menu {
+    display: none;
+  }
+  .sidebar .close-btn {
+    display: none;
   }
   header {
     display: flex;

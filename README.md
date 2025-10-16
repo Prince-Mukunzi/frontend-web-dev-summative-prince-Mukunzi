@@ -49,5 +49,5 @@ Campus Life Planner is a web application designed to help students and individua
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/campus-life-planner.git
+   git clone https://github.com/Prince-Mukunzi/campus-life-planner.git
    ```

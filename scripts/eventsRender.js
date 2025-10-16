@@ -9,7 +9,7 @@ export function renderEventGroup(items) {
                 <img src="${
                   item.thumbnail.startsWith("data:image")
                     ? item.thumbnail
-                    : `/assets/${item.thumbnail}`
+                    : `./assets/${item.thumbnail}`
                 }" 
                      alt="Event Thumbnail" 
                      class="thumbnail" />

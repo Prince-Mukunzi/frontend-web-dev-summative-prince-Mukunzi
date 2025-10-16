@@ -14,27 +14,48 @@
   </head>
   <body>
     <main class="flex">
+       <!-- Burger menu -->
+       <button class="burger-menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-menu"
+        >
+          <line x1="4" y1="6" x2="20" y2="6" />
+          <line x1="4" y1="12" x2="20" y2="12" />
+          <line x1="4" y1="18" x2="20" y2="18" />
+        </svg>
+      </button>
       <nav class="sidebar">
-        <div class="logo flex center gap-2">
-          <div class="w-full center flex gap-1">
-            <img src="/assets/logo.png" alt="logo" />
-            <p class="text-md paragraph">African Leadership University</p>
-          </div>
+        <button class="close-btn">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="20"
+            width="24"
             height="24"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="1.5"
+            stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-chevrons-up-down-icon lucide-chevrons-up-down"
+            class="lucide lucide-x-icon lucide-x"
           >
-            <path d="m7 15 5 5 5-5" />
-            <path d="m7 9 5-5 5 5" />
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
           </svg>
+        </button>
+        <div class="logo flex center gap-2">
+          <div class="w-full center flex gap-1">
+            <img src="./assets/logo.png" alt="logo" />
+            <p class="text-md paragraph">African Leadership University</p>
+          </div>
         </div>
 
         <div class="sidebar-group flex-col flex-1 gap-1">
@@ -176,7 +197,7 @@
         </header>
 
         <article class="flex-col">
-          <section class="about">
+          <section class="about flex center justify-center">
             <div class="about-card flex-col center gap-2">
               <img class="thumbnail" src="assets/planner.svg" alt="myPicture" />
               <div class="social-links flex gap-2">

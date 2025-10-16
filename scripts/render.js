@@ -5,6 +5,20 @@ import { renderTaskGroup } from "./tasksRender.js";
 const storedTasks = JSON.parse(localStorage.getItem("tasks")) || data.tasks;
 const storedEvents = JSON.parse(localStorage.getItem("events")) || data.events;
 
+// Burger Menu
+const burgerMenu = document.querySelector(".burger-menu");
+const sidebar = document.querySelector(".sidebar");
+const closeBtn = document.querySelector(".sidebar .close-btn");
+
+burgerMenu.addEventListener("click", () => {
+  sidebar.classList.toggle("show");
+});
+
+// Close the sidebar
+closeBtn.addEventListener("click", () => {
+  sidebar.classList.remove("show");
+});
+
 // Stats
 const taskCount = document.querySelector(".tasks-count");
 taskCount && (taskCount.innerText = storedTasks.length);
