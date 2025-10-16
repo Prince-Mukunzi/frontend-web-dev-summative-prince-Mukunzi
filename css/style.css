@@ -214,7 +214,9 @@ header {
   width: 100%;
   border: 1px;
 }
-
+.search-bar:focus-within {
+  border: 1px solid var(--secondary-black-color);
+}
 .event-container,
 .task-container {
   padding-top: 1rem;

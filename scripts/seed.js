@@ -26,6 +26,24 @@ export const data = {
       thumbnail: "event-3.png",
       cost: 12000,
     },
+    {
+      title: "Career Fair",
+      date: "Nov 18, 2025",
+      description:
+        "Meet recruiters from top companies hiring interns and graduates.",
+      location: "Main Hall",
+      thumbnail: "event-4.png",
+      cost: 12000,
+    },
+    {
+      title: "Career Fair",
+      date: "Nov 18, 2025",
+      description:
+        "Meet recruiters from top companies hiring interns and graduates.",
+      location: "Main Hall",
+      thumbnail: "event-5.png",
+      cost: 12000,
+    },
   ],
 
   tasks: [
