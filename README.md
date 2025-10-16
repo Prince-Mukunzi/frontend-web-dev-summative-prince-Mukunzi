@@ -2,6 +2,8 @@
 
 Campus Life Planner is a web application designed to help students and individuals manage their tasks and events efficiently. The app allows users to create, view, and search for tasks and events while keeping track of their priorities.
 
+[Demo Video](https://www.loom.com/share/9631feb62058441291edd939657193c4?sid=d67f03e0-f7ef-477f-98cc-aedf0abafb65)
+
 ## Features
 
 - **Task Management**: Add, view, and search for tasks with categories and descriptions.
