@@ -35,8 +35,7 @@ export const data = {
       description:
         "Create a mobile responsive website using only HTML, CSS and Vanilla js",
       category: "Front-End",
-      status: "In Progress",
-      priority: "High",
+      date: "Oct 12, 2025",
     },
     {
       id: 2,
@@ -44,8 +43,7 @@ export const data = {
       description:
         "Set up analytics tools to track user behavior and conversion rates.",
       category: "Responsible enterprise",
-      status: "In Progress",
-      priority: "Medium",
+      date: "Oct 14, 2025",
     },
     {
       id: 3,
@@ -53,8 +51,7 @@ export const data = {
       description:
         "Create a strong and attention-grabbing headline that communicates value.",
       category: "Web Design",
-      status: "In Review",
-      priority: "Medium",
+      date: "Oct 23, 2025",
     },
     {
       id: 4,
@@ -62,8 +59,7 @@ export const data = {
       description:
         "Clarify the landing page’s goals and structure for better conversion.",
       category: "Ethics Awareness",
-      status: "Done",
-      priority: "Low",
+      date: "Oct 26, 2025",
     },
     {
       id: 5,
@@ -71,8 +67,7 @@ export const data = {
       description:
         "Include customer testimonials and case studies to build trust.",
       category: "Employability",
-      status: "In Review",
-      priority: "Medium",
+      date: "Oct 30, 2025",
     },
   ],
 };

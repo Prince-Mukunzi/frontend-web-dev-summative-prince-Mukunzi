@@ -6,7 +6,13 @@ export function renderEventGroup(items) {
       (item) => `
             <div class="flex-col gap-1 event-group">
             <div class="item-group flex-col gap-1">
-                <img src="/assets/${item.thumbnail}" alt="" class="thumbnail" />
+                <img src="${
+                  item.thumbnail.startsWith("data:image")
+                    ? item.thumbnail
+                    : `/assets/${item.thumbnail}`
+                }" 
+                     alt="Event Thumbnail" 
+                     class="thumbnail" />
                 <p class="label center flex gap-1">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -86,6 +92,3 @@ export function renderEventGroup(items) {
     )
     .join("");
 }
-
-const eventsContainer = document.querySelector(".event-container");
-eventsContainer.innerHTML = renderEventGroup(data.events);

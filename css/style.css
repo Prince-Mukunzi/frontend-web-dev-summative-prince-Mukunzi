@@ -128,6 +128,7 @@ section {
 hr {
   border: none;
   height: 0.5px;
+  width: 350px;
   background-color: var(--secondary-black-color);
 }
 
@@ -297,6 +298,101 @@ header {
   border-radius: inherit;
 }
 
+/* About Page */
+
+.about-card {
+  padding: 1rem;
+  background-color: var(--bg-gray);
+  border-radius: 2rem;
+  color: var(--secondary-black-color);
+}
+.about-card .thumbnail {
+  background-color: var(--primary-white-color);
+  width: 100%;
+  height: 90%;
+  padding: 5rem;
+}
+
+.about-card a {
+  padding: 0.75rem 1rem;
+  background-color: var(--secondary-black-color);
+  color: var(--primary-white-color);
+  border-radius: 1rem;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--secondary-black-color);
+  z-index: 1000;
+  padding: 1rem;
+}
+
+/* Modal */
+.modal {
+  background: var(--primary-white-color);
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.modal-form label {
+  display: block;
+  margin: 0.5rem 0 0.25rem;
+}
+
+.modal-form input,
+.modal-form textarea,
+.modal-form select {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--bg-gray);
+  border-radius: 0.5rem;
+  font-size: var(--font-size-paragraph);
+}
+
+.modal-form textarea {
+  resize: vertical;
+}
+
+.btn {
+  padding: 0.785rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: var(--font-size-paragraph);
+}
+
+.btn-primary {
+  background: var(--primary-black-color);
+  color: var(--primary-white-color);
+}
+
+.btn-secondary {
+  background: var(--bg-gray);
+  color: var(--secondary-black-color);
+}
+
+.hidden {
+  display: none;
+}
+
+.settings .modal {
+  background-color: var(--bg-gray);
+}
+.settings .modal-form input,
+.modal-form textarea,
+.modal-form select {
+  border: 1px solid var(--secondary-white-color);
+  background-color: var(--primary-white-color);
+}
+
 /* ------------------------------
    7. Responsive Design
 ------------------------------ */
@@ -312,9 +408,14 @@ header {
   header {
     display: flex;
     flex-direction: row;
-    align-items: end;
   }
   .search-bar {
     width: 20rem;
+  }
+  .about-card {
+    width: 50%;
+  }
+  .about-card .thumbnail {
+    height: 50%;
   }
 }

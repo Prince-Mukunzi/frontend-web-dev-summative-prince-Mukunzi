@@ -7,7 +7,7 @@ export function renderTaskGroup(items) {
           <div class="flex-col gap-2">
             <div class="flex center between">
               <span class="label">${item.category}</span>
-              <span class="label">Sep 12, 2025</span>
+              <span class="label">${item.date}</span>
             </div>
             <p class="sub-title text-md">${item.title}</p>
             <p class="label">${item.description}</p>
@@ -22,6 +22,3 @@ export function renderTaskGroup(items) {
     )
     .join("");
 }
-
-const tasksContainer = document.querySelector(".task-container");
-tasksContainer.innerHTML = renderTaskGroup(data.tasks);
